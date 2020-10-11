@@ -20,7 +20,7 @@
 #define TOUCH_CS D3
 #define TOUCH_IRQ  D4
 
-const int SLEEP_INTERVAL_SECS = 600;        // Going to sleep after idle times, set 0 for insomnia 600000 = 100 hours
+const int SLEEP_INTERVAL_SECS = 3000;        // Going to sleep after idle times, set 0 for insomnia 600000 = 100 hours
 
 
 /***************************
