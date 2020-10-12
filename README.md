@@ -3,6 +3,8 @@ Arduino code files for WiFiPad app for use with Kenwood TS890 radio
 
 Use at your own risk! 
 
+Look at the releases >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 Okay I have it posted on GitHub. Version 4.10 - seems stable. I'm going to take a break from the project, 
 but I think I have a good start and it's useable if you already know how to program an Arduino as you need to open the source code
 to configure the buttons, etc.
