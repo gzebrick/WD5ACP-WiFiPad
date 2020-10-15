@@ -7,7 +7,7 @@ when the top main menu button (Button 0) is pressed. There's also an automatic O
 (note the ON AIR display will also turn ON when the RX is muted - I may change this in a future release)
 
 Screen button locations are:
- 0
+0
 1 2
 3 4
 5 6
