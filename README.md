@@ -1,16 +1,28 @@
 # WD5ACP-WiFiPad
-Arduino code files for WiFiPad app for use with Kenwood TS890 radio
 
 Use at your own risk! 
 
+Arduino code files for WiFiPad app for use with Kenwood TS890 radio. WiFi pad has multiple push button screens that rotate
+when the top main menu button (Button 0) is pressed. There's also an automatic ON AIR display triggered but the RX ready light going out.
+(note the ON AIR display will also turn ON when the RX is muted - I may change this in a future release)
+
+Screen button locations are:
+ 0
+1 2
+3 4
+5 6
+7 8
+
+Buttons can be programmed to send commands, including multiple commands in sequence (a macro) as well as read data from the 
+radio and do conditional actions. Commands must match Kenwood PC commands as documented by Kenwood
+
 Look at the releases >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Okay I have it posted on GitHub. Version 4.10 - seems stable. I'm going to take a break from the project, 
-but I think I have a good start and it's useable if you already know how to program an Arduino as you need to open the source code
-to configure the buttons, etc.
+Right now the configuration is split between the hard-coded program and the settings.h file. Edit the Settings file to match your QTH!
+I hope to change to program to move ALL of the configuration into the settings files (probably add a menusettings file), but for now
+the button config is in the code. 
 
-There's more that could be done, 
-like the WiFi setting via Serial, the Menu & Button configurations via a WebServer page, and even loading up the WiFi programming link,
+May also one day try to add a Web server page to change settings via a browser, but that's in the future. 
 
 I wrote the code so each screen/menu reuses the button locations and code - just need to set up each menu's displayed text 
 and edit the underlying code. Should be easy to figure out from the examples I left loaded in the app, including mult-line commands 
