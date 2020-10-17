@@ -1,0 +1,86 @@
+// Button Label1s should NOT include the ';' end of line charachter
+// but any valid Macro1 commands sent  out require it.
+// Up to 4 Macro1 commands may be used per button - if NOT required, set unused Macro1 command to ""
+//
+// Example
+// #define Label161 "RIT OFF"   // Button 6, Label1 1 (top Label1) about 12 char max
+// #define Label162 " & CLEAR"  // Button 6, Label1 2 (bottom Label1) about 12 char max
+// #define Macro161 "RT0;"      // Button 6, Macro1 command 1, must terminate with ';' char
+// #define Macro162 "RC;"       // Button 6, Macro1 command 2, must terminate with ';' char
+// #define Macro163 ""          // Button 6, Macro1 command 3, unused and ignored
+// #define Macro164 ""          // Button 6, Macro1 command 4, unused and ignored
+//
+
+// Top  Menu Button
+#define Label101 "Label1"
+#define Label102 "Label2"
+
+// Button 1
+#define Label111 ""
+#define Label112 ""
+#define Macro111 ""
+#define Macro112 ""
+#define Macro113 ""
+#define Macro114 ""
+
+// Button2
+#define Label121 ""
+#define Label122 ""
+#define Macro121 ""
+#define Macro122 ""
+#define Macro123 ""
+#define Macro124 ""
+
+// Button3
+#define Label131 ""
+#define Label132 ""
+#define Macro131 ""
+#define Macro132 ""
+#define Macro133 ""
+#define Macro134 ""
+
+// Button4
+#define Label141 ""
+#define Label142 ""
+#define Macro141 ""
+#define Macro142 ""
+#define Macro143 ""
+#define Macro144 ""
+
+// Button5
+#define Label151 ""
+#define Label152 ""
+#define Macro151 ""
+#define Macro152 ""
+#define Macro153 ""
+#define Macro154 ""
+
+// Button6
+#define Label161 ""
+#define Label162 ""
+#define Macro161 ""
+#define Macro162 ""
+#define Macro163 ""
+#define Macro164 ""
+
+// Button7
+#define Label171 ""
+#define Label172 ""
+#define Macro171 ""
+#define Macro172 ""
+#define Macro173 ""
+#define Macro174 ""
+
+// Button8
+#define Label181 ""
+#define Label182 ""
+#define Macro181 ""
+#define Macro182 ""
+#define Macro183 ""
+#define Macro184 ""
+
+
+
+/***************************
+   End Settings
+ **************************/
