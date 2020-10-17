@@ -4,28 +4,38 @@ Use at your own risk!
 
 Arduino code files for WiFiPad app for use with Kenwood TS890 radio. WiFi pad has multiple push button screens that rotate
 when the top main menu button (Button 0) is pressed. There's also an automatic ON AIR display triggered but the RX ready light going out.
-(note the ON AIR display will also turn ON when the RX is muted - I may change this in a future release)
+(note the ON AIR display will also turn ON when the RX is muted)
 
-Buttons can be programmed to send commands, including multiple commands in sequence (a macro) as well as read data from the 
-radio and do conditional actions. Commands must match Kenwood PC commands as documented by Kenwood
+Buttons can be programmed to send commands, including up to 4  multiple commands in sequence (a macro). 
+It is even possible to build complicated macros based on conditionals (if this, do that) but that requires your own custom programming
+
+Commands must match Kenwood PC commands as documented by Kenwood
 
 Look at the releases >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Right now the configuration is split between the hard-coded program and the settings.h file. Edit the Settings file to match your QTH!
-I hope to change to program to move ALL of the configuration into the settings files (probably add a menusettings file), but for now
-the button config is in the code. 
+All basic configuration settings have been moved to the .h files. These may be edited as plain text. 
+The settins.h file sets up the behaivor of the main program including setting the number of menus in rotation
+The WiFiPadConfig.h file is mostly for setting the WiFi and host IP settings including user names and passwords
+The 4 ConfigMenu.h files define the 4 custom button screens. Each screen has a 2 line descriptor, and each button
+has a 2-line label as well as up to 4 sequenced commands.
 
-May also one day try to add a Web server page to change settings via a browser, but that's in the future. 
+I know the code is a bit crude, with little use of for and while loops, so there's a lot of redundant coding that someone with more 
+time and experience with Arduino could no doubt to better - but for me, it seems to work fine.
 
-I wrote the code so each screen/menu reuses the button locations and code - just need to set up each menu's displayed text 
-and edit the underlying code. Should be easy to figure out from the examples I left loaded in the app, including mult-line commands 
-and even a conditional to have one button function as RIT ON (when off) and RIT OFF (when ON) - 
+Although it does not support it, it may be possible to enhance the code to store the settings in splain .txt files that could be
+read off the non-volatile memory in the WiFi pad. This would allow 'on the fly' reconfiguration without need of any programming or downloading.
+There's file space and the little ESP Arduino boad supports it, but moving the settings from .h files to txt files, and then
+providing code to read/write to the files, and finally adding HTTP or FTP server functionality to edit/load/save/delete the files is not 
+part of the scope of this project. Could be done, just would take a lot of work.
+
+Right now intial programming as well as configuration cahnges  WILL require using the Arduino programmer.
 
 Anyway feel free to play with it. In the spirit of Amateur Radio it's up for grabs. I'm not that experienced with Arduino 
 so if you want to jazz it up and share your fixes please do! 
 
 My goal wasn't to make the best touchpad, only get one going for the lowest possible cost. 
-I reused some of the code from the sample weather station app that the seller provides.
+I started off using some of the code from the sample weather station app that the seller provides, as well as borrowing from some of the provided
+example code. It isn't the prettiest code I've ever done.
 
 The little Arduino WEMOS + display has enough power and memory for this app, and you can power it right off the front USB plug on the radio!
 
