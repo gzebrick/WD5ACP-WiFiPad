@@ -3,8 +3,9 @@
 Use at your own risk! 
 
 Arduino code files for WiFiPad app for use with Kenwood TS890 radio. WiFi pad has multiple push button screens that rotate
-when the top main menu button (Button 0) is pressed. There's also an automatic ON AIR display triggered but the RX ready light going out.
-(note the ON AIR display will also turn ON when the RX is muted)
+when the top main menu button (Button 0) is pressed. There's also an automatic ON AIR display triggered when the RX ready light is off.
+(note the ON AIR display will also turn ON when the RX is muted). ON AIR display may include your call sign, and there's a built-in 
+10 minute TX timer.
 
 Buttons can be programmed to send commands, including up to 4  multiple commands in sequence (a macro). 
 It is even possible to build complicated macros based on conditionals (if this, do that) but that requires your own custom programming
