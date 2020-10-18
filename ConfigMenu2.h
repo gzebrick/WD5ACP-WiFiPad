@@ -56,25 +56,25 @@
 #define Macro254 ""
 
 // Button6
-#define Label261 ""
-#define Label262 ""
-#define Macro261 ""
-#define Macro262 ""
+#define Label261 "Mem CH 10"
+#define Label262 "> VFO A"
+#define Macro261 "MN010;"
+#define Macro262 "SV;"
 #define Macro263 ""
 #define Macro264 ""
 
 // Button7
-#define Label271 ""
-#define Label272 ""
-#define Macro271 ""
-#define Macro272 ""
-#define Macro273 ""
+#define Label271 "Mem CH 11"
+#define Label272 "MR SPLIT"
+#define Macro271 "MN011;"
+#define Macro272 "SV;"
+#define Macro273 "SV;"
 #define Macro274 ""
 
 // Button8
-#define Label281 ""
-#define Label282 ""
-#define Macro281 ""
+#define Label281 "SPLIT"
+#define Label282 "OFF"
+#define Macro281 "TB0;"
 #define Macro282 ""
 #define Macro283 ""
 #define Macro284 ""
