@@ -1,5 +1,5 @@
 #include <ArduinoOTA.h>
-#define VER 5.02  // Program Version Number resides here. Change this every time you save - as to a new version number.
+#define VER 5.03  // Program Version Number resides here. Change this every time you save - as to a new version number.
 
 /** Guy Zebrick / WD5ACP @ 2020
 
@@ -30,6 +30,7 @@
    4.21 Change On-Air menu to menu 0, Default menu to Custom Config menu 1
    5.01 Tweaked time-out timer code. Added MC 10 to menu
    5.02 FOund another bug in LED timer - (moved another bracked) - should work okay now.
+   5.03 Added count UP timer to ON AIR display (just displays total seconds)
 */
 
 /*****************************
@@ -260,6 +261,9 @@ void setup() { // Initial Setup start here           ---------------------------
 int lastScreen = 3; // Default last screen is the connect screen
 
 unsigned long onAirTime;
+int dispMins = 0;
+int dispSecs = 0;
+
 long lastDrew = 0;
 bool btnClick;
 uint8_t MAX_TOUCHPOINTS = 10;
@@ -353,7 +357,11 @@ void loop() { // Main Loop starts here =========================================
 void drawOnAir()  {  // Screen to pop up when transmitting... // ------------------------------------------------------------------------------------------
   gfx.fillBuffer(MINI_BLACK);
   // checkStatus();
-  drawButton(0, "", "");       // This is the top menu button
+  drawButton(0, "WiFi PAD", "ON AIR TIMER");       // This is the top menu button
+
+  gfx.setColor(MINI_WHITE);
+  gfx.drawString(120, 260, (String((millis() - onAirTime) / 1000) + " seconds"));  // Count UP timer
+
   if ((millis() - onAirTime) > (ON_AIR_LIMIT * 1000)) { // 10 minute trasnmit timer turns ON AIR SCREEN full red
     gfx.fillBuffer(MINI_RED);
     gfx.setFont(ArialMT_Plain_24);  // Larger FONT
