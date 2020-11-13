@@ -1,4 +1,5 @@
-Ver#include <ArduinoOTA.h>
+#include <ArduinoOTA.h>
+
 #define VER 5.10 // Program Version Number resides here. Change this every time you save - as to a new version number.
 
 /** Guy Zebrick / WD5ACP @ 2020
