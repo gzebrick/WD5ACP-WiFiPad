@@ -12,69 +12,69 @@
 //
 
 // Top  Menu Button
-#define Label301 "Label3"
-#define Label302 "Label3"
+#define Label301 " WiFi Pad"
+#define Label302 "Memory Channels"
 
 // Button 1
-#define Label311 ""
-#define Label312 ""
-#define Macro311 ""
-#define Macro312 ""
+#define Label311 "Mem CH 51"
+#define Label312 "> VFO A"
+#define Macro311 "MN051;"
+#define Macro312 "SV;"
 #define Macro313 ""
 #define Macro314 ""
 
 // Button2
-#define Label321 ""
-#define Label322 ""
-#define Macro321 ""
-#define Macro322 ""
+#define Label321 "Mem CH 52"
+#define Label322 "> VFO A"
+#define Macro321 "MN052;"
+#define Macro322 "SV;"
 #define Macro323 ""
 #define Macro324 ""
 
 // Button3
-#define Label331 ""
-#define Label332 ""
-#define Macro331 ""
-#define Macro332 ""
+#define Label331 "Mem CH 53"
+#define Label332 "> VFO A"
+#define Macro331 "MN053;"
+#define Macro332 "SV;"
 #define Macro333 ""
 #define Macro334 ""
 
 // Button4
-#define Label341 ""
-#define Label342 ""
-#define Macro341 ""
-#define Macro342 ""
+#define Label341 "Mem CH 54"
+#define Label342 "> VFO A"
+#define Macro341 "MN054;"
+#define Macro342 "SV;"
 #define Macro343 ""
 #define Macro344 ""
 
 // Button5
-#define Label351 ""
-#define Label352 ""
-#define Macro351 ""
-#define Macro352 ""
+#define Label351 "Mem CH 55"
+#define Label352 "> VFO A"
+#define Macro351 "MN055;"
+#define Macro352 "SV;"
 #define Macro353 ""
 #define Macro354 ""
 
 // Button6
-#define Label361 ""
-#define Label362 ""
-#define Macro361 ""
-#define Macro362 ""
+#define Label361 "Mem CH 10"
+#define Label362 "> VFO A"
+#define Macro361 "MN010;"
+#define Macro362 "SV;"
 #define Macro363 ""
 #define Macro364 ""
 
 // Button7
-#define Label371 ""
-#define Label372 ""
-#define Macro371 ""
-#define Macro372 ""
-#define Macro373 ""
+#define Label371 "Mem CH 11"
+#define Label372 "MR SPLIT"
+#define Macro371 "MN011;"
+#define Macro372 "SV;"
+#define Macro373 "SV;"
 #define Macro374 ""
 
 // Button8
-#define Label381 ""
-#define Label382 ""
-#define Macro381 ""
+#define Label381 "SPLIT"
+#define Label382 "OFF"
+#define Macro381 "TB0;"
 #define Macro382 ""
 #define Macro383 ""
 #define Macro384 ""

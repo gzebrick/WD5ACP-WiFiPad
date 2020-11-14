@@ -3,8 +3,8 @@
 // Up to 4 Macro2 commands may be used per button - if NOT required, set unused Macro2 command to ""
 //
 // Example
-// #define Label261 "RIT OFF"   // Button 6, Label2 1 (top Label2) about 12 char max
-// #define Label262 " & CLEAR"  // Button 6, Label2 2 (bottom Label2) about 12 char max
+// #define Label261 "RIT OFF"   // Button 6, Label2 1 (top Label2) about 11 char max
+// #define Label262 " & CLEAR"  // Button 6, Label2 2 (bottom Label2) about 11 char max
 // #define Macro261 "RT0;"      // Button 6, Macro2 command 1, must terminate with ';' char
 // #define Macro262 "RC;"       // Button 6, Macro2 command 2, must terminate with ';' char
 // #define Macro263 ""          // Button 6, Macro2 command 3, unused and ignored
@@ -12,69 +12,69 @@
 //
 
 // Top  Menu Button
-#define Label201 "WiFi Pad"
-#define Label202 "Memory Channel Menu"
+#define Label201 " WiFi PAD"
+#define Label202 "Voice Messages"
 
 // Button 1
-#define Label211 "Mem CH 51"
-#define Label212 "> VFO A"
-#define Macro211 "MN051;"
-#define Macro212 "SV;"
+#define Label211 "Voice Msg 1"
+#define Label212 "CQ CQ CQ"
+#define Macro211 "PB01;"
+#define Macro212 "PB115;"
 #define Macro213 ""
 #define Macro214 ""
 
 // Button2
-#define Label221 "Mem CH 52"
-#define Label222 "> VFO A"
-#define Macro221 "MN052;"
-#define Macro222 "SV;"
+#define Label221 "Voice Msg 2"
+#define Label222 ""
+#define Macro221 "PB01"
+#define Macro222 "PB115"
 #define Macro223 ""
 #define Macro224 ""
 
 // Button3
-#define Label231 "Mem CH 53"
-#define Label232 "> VFO A"
-#define Macro231 "MN053;"
-#define Macro232 "SV;"
+#define Label231 "Voice Msg 3"
+#define Label232 ""
+#define Macro231 "PB01;"
+#define Macro232 "PB135;"
 #define Macro233 ""
 #define Macro234 ""
 
 // Button4
-#define Label241 "Mem CH 54"
-#define Label242 "> VFO A"
-#define Macro241 "MN054;"
-#define Macro242 "SV;"
+#define Label241 "Voice Msg 4"
+#define Label242 ""
+#define Macro241 "PB01;"
+#define Macro242 "PB145;"
 #define Macro243 ""
 #define Macro244 ""
 
 // Button5
-#define Label251 "Mem CH 55"
-#define Label252 "> VFO A"
-#define Macro251 "MN055;"
-#define Macro252 "SV;"
+#define Label251 "Voice Msg 5"
+#define Label252 ""
+#define Macro251 "PB01;"
+#define Macro252 "PB155;"
 #define Macro253 ""
 #define Macro254 ""
 
 // Button6
-#define Label261 "Mem CH 10"
-#define Label262 "> VFO A"
-#define Macro261 "MN010;"
-#define Macro262 "SV;"
+#define Label261 "Voice Msg 6"
+#define Label262 "TEST"
+#define Macro261 "PB01;"
+#define Macro262 "PB165;"
 #define Macro263 ""
 #define Macro264 ""
 
 // Button7
-#define Label271 "Mem CH 11"
-#define Label272 "MR SPLIT"
-#define Macro271 "MN011;"
-#define Macro272 "SV;"
-#define Macro273 "SV;"
+#define Label271 ""
+#define Label272 ""
+#define Macro271 ""
+#define Macro272 ""
+#define Macro273 ""
 #define Macro274 ""
 
 // Button8
-#define Label281 "SPLIT"
-#define Label282 "OFF"
-#define Macro281 "TB0;"
+#define Label281 "Clear / STOP"
+#define Label282 "Voice Msgs"
+#define Macro281 "PB00;"
 #define Macro282 ""
 #define Macro283 ""
 #define Macro284 ""

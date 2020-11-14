@@ -10,7 +10,7 @@
 #define Host_PORT 60000  // TCP Port 60000 required for Kenwood TS-890
 #define Host_USER "WD5ACP"
 #define Host_PASS "WD5ACP"
-#define Host_ID "" // Alternative to using user name and password. Must type complete ID string. This is ignored if not just ""
+#define Host_ID "" // Alternative to using user name and password. Must type complete ID string. This is ignored if just ""
 
 
 

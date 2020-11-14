@@ -12,8 +12,8 @@
 //
 
 // Top  Menu Button
-#define Label401 ""
-#define Label402 ""
+#define Label401 "Label4"
+#define Label402 "Label4"
 
 // Button 1
 #define Label411 ""
@@ -26,7 +26,7 @@
 // Button2
 #define Label421 ""
 #define Label422 ""
-#define Macro421  ""
+#define Macro421 ""
 #define Macro422 ""
 #define Macro423 ""
 #define Macro424 ""
