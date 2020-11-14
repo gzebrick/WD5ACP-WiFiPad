@@ -39,7 +39,7 @@
    5.09 Increased timeouts
    5.10 Added check to screen to enter sleep mode - will display ON AIR even if LED timeout is active
    5.11 Added new menu 1 - QUICK ACCESS - fixed typo on first line version numbner
-   5.12 Something funky with the PA volt reply - needed to reset meter to volts every query - working now
+   5.12 Added code to turn off all returned meter data except volts.
 */
 
 /*****************************
@@ -282,6 +282,14 @@ void setup() { // Initial Setup start here           ---------------------------
   delay (5000); // Wait 5 more seconds upon initial power up...
   connectHost();  // code to initialize connection to Host
 
+  Serial.println("login complete. Setting meter data to PA volts");
+  delay (100);
+  writeHost("AI;"); // turn off stream mode and set Radio to poll - response mode
+  readHost();
+  delay (100);
+  writeHost("RM;"); // Setting meter data type to PA voltage (> 0 in transmit) to trigger on-air
+  readHost();
+  delay (100);
 
   Serial.println("Startup complete");
 }  // End of initial setup
@@ -307,8 +315,6 @@ void loop() { // Main Loop starts here =========================================
 
   if (millis() - timeout > (KEEP_ALIVE_TIME * 1000)) {
     timeout = millis();
-    writeHost("RM51;");  // query if busy tranmitting by checking meter voltage reading
-    readHost();
     writeHost("RM;");  // query if busy tranmitting by checking meter voltage reading
     readHost();
     if (screen > 0) { // Screens 0 is reserved for on - air.
@@ -1148,11 +1154,15 @@ void connectHost() {
 
   drawProgress(80, "Loggin complete...");
   Serial.println("login complete. Setting meter data to PA volts");
+  writeHost("AI0;"); // turn off stream mode and set Radio to poll - response mode
+  writeHost("RM10;");
+  writeHost("RM20;");
+  writeHost("RM30;");
+  writeHost("RM40;");
   writeHost("RM51;"); // Setting meter data type to PA voltage (> 0 in transmit) to trigger on-air
-  delay (100);
-  writeHost("RM51;"); // Setting meter data type to PA voltage (> 0 in transmit) to trigger on-air
+  writeHost("RM60;");
   readHost();
-  delay (20);
+  delay (50);
   screen = 3;
 }
 
@@ -1203,6 +1213,7 @@ void writeHost(String putString) { // write command to host --------------------
   }
   else {
     if (!(closeHost) & (client.connected())) {
+      retString = ""; // clear the previous return string
       Serial.print("Writing: " + putString + " ");
       client.print(putString);
       delay(200);
