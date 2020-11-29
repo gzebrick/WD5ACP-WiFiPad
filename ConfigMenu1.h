@@ -32,20 +32,20 @@
 #define Macro124 "PC035;"		// Power to 35 watts
 
 // Button3
-#define Label131 ""
-#define Label132 ""
-#define Macro131 ""
-#define Macro132 ""
-#define Macro133 ""
-#define Macro134 ""
+#define Label131 "MR SCAN"
+#define Label132 "SCOPE OFF"
+#define Macro131 "MV1;" // Memory mode
+#define Macro132 "BS00;" // Bandscope Off
+#define Macro133 "SC01;"  // Scan ON
+#define Macro134 "SQ175;"  // Squelch about 75%
 
 // Button4
-#define Label141 ""
-#define Label142 ""
-#define Macro141 ""
-#define Macro142 ""
-#define Macro143 ""
-#define Macro144 ""
+#define Label141 "MR SCAN OFF"
+#define Label142 "MR to VFO"
+#define Macro141 "SC00;"  // SCann Off
+#define Macro142 "SV;" // VFO mode
+#define Macro143 "BS01;" // Bandscope back on
+#define Macro144 "SQ000;" // Squelch back to zero
 
 // Button5
 #define Label151 ""

@@ -56,27 +56,27 @@
 #define Macro354 ""
 
 // Button6
-#define Label361 "Mem CH 10"
-#define Label362 "> VFO A"
-#define Macro361 "MN010;"
-#define Macro362 "SV;"
+#define Label361 ""
+#define Label362 ""
+#define Macro361 ""
+#define Macro362 ""
 #define Macro363 ""
 #define Macro364 ""
 
 // Button7
-#define Label371 "Mem CH 11"
-#define Label372 "MR SPLIT"
-#define Macro371 "MN011;"
+#define Label371 "Mem CH 15"
+#define Label372 "FM RPTRS"
+#define Macro371 "MN015;"
 #define Macro372 "SV;"
-#define Macro373 "SV;"
+#define Macro373 "MV1;"
 #define Macro374 ""
 
 // Button8
-#define Label381 "SPLIT"
-#define Label382 "OFF"
-#define Macro381 "TB0;"
-#define Macro382 ""
-#define Macro383 ""
+#define Label381 "SPLIT OFF"
+#define Label382 "10M USB"
+#define Macro381 "MN020;"
+#define Macro382 "SV;"
+#define Macro383 "TB0;"
 #define Macro384 ""
 
 
