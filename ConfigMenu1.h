@@ -16,18 +16,18 @@
 #define Label102 "QUICK ACCESS"
 
 // Button 1
-#define Label111 "SSTV 20 w"
-#define Label112 "AMP ON"
-#define Macro111 "FA00014230000;"
-#define Macro112 "OM0D;" 			// USB Data mode
-#define Macro113 "FL01;"		// IF Filter B
-#define Macro114 "PC020;"		// Amp ON, Power limit ON, power to 20 watts
+#define Label111 "TX BW WIDE"
+#define Label112 "10 - 4 Khz"
+#define Macro111 "EX00606 000;"  // 10 hz
+#define Macro112 "EX00607 007;"  // 4khz
+#define Macro113 ""
+#define Macro114 ""
 
 // Button2
-#define Label121 ""
-#define Label122 ""
-#define Macro121 ""
-#define Macro122 "" 		
+#define Label121 "TX BW NRML"
+#define Label122 "100 - 3 Khz"
+#define Macro121 "EX00606 001;"  // 100 hz
+#define Macro122 "EX00607 005;"  // Menu Selection 0 6 7 007 		
 #define Macro123 ""		
 #define Macro124 ""		
 
@@ -64,16 +64,16 @@
 #define Macro164 ""
 
 // Button7
-#define Label171 ""
-#define Label172 ""
-#define Macro171 ""
-#define Macro172 ""
-#define Macro173 ""
-#define Macro174 ""
+#define Label171 "SSTV 20 w"
+#define Label172 "DATA MODE"
+#define Macro171 "FA00014230000;"
+#define Macro172 "OM0D;" 			// USB Data mode
+#define Macro173 "FL01;"		// IF Filter B
+#define Macro174 "PC020;"		// power to 20 watts
 
 // Button8
-#define Label181 "USB MODE"
-#define Label182 "HRH 20 MTRs"
+#define Label181 "HRH 20 MTRs"
+#define Label182 "USB NRML"
 #define Macro181 "FA00014183000;"
 #define Macro182 "OM02;"      // USB mode
 #define Macro183 "FL00;"   // IF Filter A

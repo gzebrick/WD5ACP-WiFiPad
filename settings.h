@@ -9,7 +9,7 @@ const int MaxMenus = 3;  // Set this number to match the quantity of ConfigMenu.
 //                  "..............." Message is centered in display above "ON AIR" 
 #define ON_AIR_CALL "WD5ACP"           // 15 chars max!
 const int ON_AIR_LIMIT = 600; // 10 minute timer 600 = 10 mins
-const int KEEP_ALIVE_TIME = 4; // secs to tickle host to keep connection alive
+const int KEEP_ALIVE_TIME = 2; // secs to tickle host to keep connection alive
 const int SLEEP_INTERVAL_SECS = 10800;  // 10800in seconds - turns off backlight - touch screen to wake up
 
 

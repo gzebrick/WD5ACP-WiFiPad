@@ -76,7 +76,7 @@
 #define Label382 "10M USB"
 #define Macro381 "MN020;"
 #define Macro382 "SV;"
-#define Macro383 "TB0;"
+#define Macro383 "TB0;"  //split off
 #define Macro384 ""
 
 
