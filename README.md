@@ -18,8 +18,6 @@ It is even possible to build complicated macros based on conditionals (if this, 
 
 Commands must match Kenwood PC commands as documented by Kenwood (.pdf file included).
 
-Look at the releases >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 All basic configuration settings have been moved to the .h files. These may be edited as plain text. 
 The setting.h file sets up the behaivor of the main program including setting the number of menus in rotation
 The WiFiPadConfig.h file is mostly for setting the WiFi and host IP settings including user names and passwords
