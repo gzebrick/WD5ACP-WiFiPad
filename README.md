@@ -1,4 +1,9 @@
 # WD5ACP-WiFiPad
+>>>>> CLICK ON THE RELEASES TO THE RIGHT TO GET THE LATEST RELEASE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> THE SAMPLE WEATHER APP SHOULD BE INSTALLED FIRST AS A TEST IF YOU'RE NEW TO THIS ARDUINO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> YOU"RE CONFIGURATION FILES WILL BE DIFFERENT FOR SETTING YOUT WiFi AND YOUR BUTTONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>> 
+
 
 Use at your own risk! Probably buggy!
 
