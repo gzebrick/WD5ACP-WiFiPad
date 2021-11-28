@@ -8,7 +8,7 @@ YOUR CONFIGURATION FILES WILL BE DIFFERENT FOR SETTING YOUT WiFi AND YOUR BUTTON
 
 Use at your own risk! Probably buggy!
 
-3d case: https://www.tinkercad.com/things/64qoauGqMDp-wifipad7
+3d case: https://www.tinkercad.com/things/8LtiTtlEM30-wifipad8/
 
 Arduino code files for WiFiPad app for use with Kenwood TS890 radio. WiFi pad has multiple push button screens that rotate
 when the top main menu button (Button 0) is pressed. There's also an automatic ON AIR display triggered when the radio returns a PA voltage > 0.
